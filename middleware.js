@@ -81,5 +81,6 @@ module.exports = function(compiler, options) {
 	webpackDevMiddleware.invalidate = shared.invalidate;
 	webpackDevMiddleware.close = shared.close;
 	webpackDevMiddleware.fileSystem = context.fs;
+	webpackDevMiddleware.watching = context.watching;
 	return webpackDevMiddleware;
 };
